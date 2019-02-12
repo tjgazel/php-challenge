@@ -1,9 +1,22 @@
 # PHP Challenge
 
+### Instalando o projeto
+Clone o repositório ou baixe o arquivo zip.
+
+```bash
+git clone https://github.com/tjgazel/php-challenge.git
+```
+Acesse o diretório do projeto e use o composer para baixar as dependências do projeto.
+
+```bash
+composer update
+```
+
+<br>
+
 ### Configurando ambiente local.
 
-O projeto foi feito com Laravel. Os arquivos `.env` e `.env.testing` já estão previamente configurados para
-uso com os container Docker.
+O projeto foi feito com Laravel. Os arquivos `.env` e `.env.testing` já estão previamente configurados.
 
 Use o Doker e o Docker-compose para subir os container previamentes configurados no arquivo `docker-compose.yml`
 

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75f8e67a-fe76-40b4-9f6f-998784d9a11f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="75f8e67a-fe76-40b4-9f6f-998784d9a11f" name="Default Changelist" comment="alterado campo complemento para aceitar nulo">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_300000_create_enderecos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_300000_create_enderecos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/791d97d7-3d3b-443a-ab23-b77161257705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/791d97d7-3d3b-443a-ab23-b77161257705.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,18 +29,25 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="php_challenge@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="php_challenge@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="php_challenge@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="php_challenge: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="php_challenge@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="php_challenge: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="enderecos: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -49,10 +55,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_300000_create_enderecos_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="21" column="58" lean-forward="true" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="220">
+                <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -128,8 +137,8 @@
         <option value="$PROJECT_DIR$/tests/Feature/InscricaoTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ModelPlanoTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ModelStatusTransacaoTest.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_300000_create_enderecos_table.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -246,22 +255,6 @@
               <item name="php-challenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="php-challenge" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="php-challenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php-challenge" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php-challenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php-challenge" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="php-challenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php-challenge" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -362,12 +355,34 @@
       <workItem from="1549807501377" duration="45745000" />
       <workItem from="1549900948783" duration="29451000" />
       <workItem from="1549987564199" duration="7469000" />
-      <workItem from="1549997838660" duration="85000" />
+      <workItem from="1549997838660" duration="1046000" />
     </task>
+    <task id="LOCAL-00001" summary="remove .idea">
+      <created>1549997967630</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549997967630</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remove">
+      <created>1549997988363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549997988363</updated>
+    </task>
+    <task id="LOCAL-00003" summary="alterado campo complemento para aceitar nulo">
+      <created>1549998038033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1549998038033</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102848000" />
+    <option name="totallyTimeSpent" value="103809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="2560" height="1084" extended-state="6" />
@@ -460,6 +475,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove .idea" />
+    <MESSAGE value="remove" />
+    <MESSAGE value="alterado campo complemento para aceitar nulo" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterado campo complemento para aceitar nulo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Rules/CartaoCredito.php">
@@ -630,67 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/791d97d7-3d3b-443a-ab23-b77161257705">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>791d97d7-3d3b-443a-ab23-b77161257705</OriginalElement>
-          <nodes>
-            <node x="765.375" y="322.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.contatos</node>
-            <node x="568.0" y="567.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.password_resets</node>
-            <node x="505.375" y="250.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.enderecos</node>
-            <node x="0.0" y="567.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.users</node>
-            <node x="0.0" y="36.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.status_transacao</node>
-            <node x="163.25" y="226.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.transacoes</node>
-            <node x="312.0" y="567.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.migrations</node>
-            <node x="230.0" y="36.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.planos</node>
-            <node x="524.5" y="0.0">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.clientes</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.contatos" target="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.clientes">
-              <point x="0.0" y="-52.0" />
-              <point x="885.375" y="201.0" />
-              <point x="702.0" y="201.0" />
-              <point x="71.0" y="88.0" />
-            </edge>
-            <edge source="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.transacoes" target="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.status_transacao">
-              <point x="-104.0" y="-148.0" />
-              <point x="215.25" y="201.0" />
-              <point x="105.0" y="201.0" />
-              <point x="0.0" y="52.0" />
-            </edge>
-            <edge source="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.enderecos" target="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.clientes">
-              <point x="0.0" y="-124.0" />
-              <point x="625.375" y="201.0" />
-              <point x="631.0" y="201.0" />
-              <point x="0.0" y="88.0" />
-            </edge>
-            <edge source="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.transacoes" target="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.clientes">
-              <point x="104.0" y="-148.0" />
-              <point x="423.25" y="201.0" />
-              <point x="560.0" y="201.0" />
-              <point x="-71.0" y="88.0" />
-            </edge>
-            <edge source="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.transacoes" target="791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.planos">
-              <point x="0.0" y="-148.0" />
-              <point x="319.25" y="201.0" />
-              <point x="335.0" y="201.0" />
-              <point x="0.0" y="52.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.9239210850801478" x="-110.0" y="240.0" />
-          <SelectedNodes>
-            <node>791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.clientes</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Api/Pagamento.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -803,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="280">
-            <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/ModelStatusTransacaoTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -850,10 +800,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://DATABASE/791d97d7-3d3b-443a-ab23-b77161257705">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>791d97d7-3d3b-443a-ab23-b77161257705</OriginalElement>
+          <nodes>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.clientes</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.transacoes</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.password_resets</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.contatos</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.migrations</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.users</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.status_transacao</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.enderecos</node>
+            <node x="" y="">791d97d7-3d3b-443a-ab23-b77161257705.TABLE:php_challenge.planos</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="917.5" y="395.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_300000_create_enderecos_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="21" column="58" lean-forward="true" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="220">
+            <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
